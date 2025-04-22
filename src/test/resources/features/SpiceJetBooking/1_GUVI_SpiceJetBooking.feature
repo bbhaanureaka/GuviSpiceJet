@@ -9,7 +9,7 @@ Feature: SpiceJet Flight Booking
       | Current URL   |
       | &CURRENT URL& |
 
-  @WEB @TEST12 @TC_ID_1002 @TC_ID_1003 @TC_ID_1004
+  @WEB @TEST1 @TC_ID_1002 @TC_ID_1003 @TC_ID_1004
   Scenario Template: Create Account in SpiceJet with No Test Data and Invalid Data
     Given As a user i should SpiceJet navigate to Create Account page
     And I should not enter any data in SpiceJet input fields and Click on Create an Account button
@@ -23,7 +23,7 @@ Feature: SpiceJet Flight Booking
       | Validation Messages   | Invalid Data   | Invalid Validation Messages   | Valid Data   |
       | &VALIDATION MESSAGES& | &INVALID DATA& | &INVALID VALIDATION MESSAGES& | &VALID DATA& |
 
-  @WEB @TEST12 @TC_ID_1005
+  @WEB @TEST1 @TC_ID_1005
   Scenario Template: Login with Existing User
     Given As a user i should navigate to Spicejet Sign In button
     When I enter Spicejet UserName "<UserName>" and click Continue
@@ -33,7 +33,7 @@ Feature: SpiceJet Flight Booking
       | UserName   | Password   |
       | &USERNAME& | &PASSWORD& |
 
-  @WEB @TEST12 @TC_ID_1006
+  @WEB @TEST1 @TC_ID_1006
   Scenario Template: Check flight not available for respective route
     Given As a user i should click on Flights Tab
     When I enter all flight details "<WrongFlightDetails>" in the Flights tab
@@ -59,7 +59,7 @@ Feature: SpiceJet Flight Booking
       | OneWayFlightDetails   | ContactDetails   | CardDetails   |
       | &ONEWAYFLIGHTDETAILS& | &CONTACTDETAILS& | &CARDDETAILS& |
 
-  @WEB @TEST12 @TC_ID_1008
+  @WEB @TEST1 @TC_ID_1008
   Scenario Template: Check Flight Two Way trip can be booked successfully
     Given As a user i should click on Flights Tab
     When I enter all Two Way flight details "<TwoWayFlightDetails>" in the Flights tab
