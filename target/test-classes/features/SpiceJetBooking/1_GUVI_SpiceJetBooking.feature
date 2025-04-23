@@ -9,7 +9,7 @@ Feature: SpiceJet Flight Booking
       | Current URL   |
       | &CURRENT URL& |
 
-  @WEB @TEST12 @TC_ID_1002 @TC_ID_1003 @TC_ID_1004
+  @WEB @TEST1 @TC_ID_1002 @TC_ID_1003 @TC_ID_1004
   Scenario Template: Create Account in SpiceJet with No Test Data and Invalid Data
     Given As a user i should SpiceJet navigate to Create Account page
     And I should not enter any data in SpiceJet input fields and Click on Create an Account button
@@ -43,7 +43,7 @@ Feature: SpiceJet Flight Booking
       | WrongFlightDetails   |
       | &WRONGFLIGHTDETAILS& |
 
-  @WEB @TEST1 @TC_ID_1007
+  @WEB @TEST12 @TC_ID_1007
   Scenario Template: Check Flight One Way trip can be booked successfully
     Given As a user i should click on Flights Tab
     When I enter all One Way flight details "<OneWayFlightDetails>" in the Flights tab
