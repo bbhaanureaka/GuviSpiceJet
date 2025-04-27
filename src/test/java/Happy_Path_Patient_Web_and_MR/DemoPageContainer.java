@@ -1,6 +1,5 @@
 package Happy_Path_Patient_Web_and_MR;
 
-import Happy_Path_Patient_Web_and_MR.pages.BestBuyPage;
 import Happy_Path_Patient_Web_and_MR.pages.SpiceJetPage;
 import cap.helpers.Constants;
 import cap.utilities.SharedDriver;
@@ -24,9 +23,6 @@ public class DemoPageContainer {
     private Eyes eyes;
     public static Scenario myScenario;
     public static LinkedHashMap<String, String> printTestDataMap = new LinkedHashMap<String, String>();
-
-
-    public BestBuyPage bestBuyPage;
 
     public SpiceJetPage spiceJetPage;
 
@@ -62,7 +58,6 @@ public class DemoPageContainer {
 
     private void initPages() {
 
-        bestBuyPage = new BestBuyPage(driver);
         spiceJetPage = new SpiceJetPage(driver);
 
     }

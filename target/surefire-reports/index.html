@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Happy_Path_Patient_Web_and_MR.cukes.DemoWebSpiceJet" hash-for-method="runScenario(&quot;Check Flight One Way trip can be booked successfully&quot;, &quot;Optional[SpiceJet Flight Booking]&quot;)">runScenario("Check Flight One Way trip can be booked successfully", "Optional[SpiceJet Flight Booking]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,11 +119,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Happy_Path_Patient_Web_and_MR.cukes.DemoWebSpiceJet" hash-for-method="runScenario(&quot;Launch SpiceJet Website and Validate URL is valid&quot;, &quot;Optional[SpiceJet Flight Booking]&quot;)">runScenario("Launch SpiceJet Website and Validate URL is valid", "Optional[SpiceJet Flight Booking]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Happy_Path_Patient_Web_and_MR.cukes.DemoWebSpiceJet" hash-for-method="runScenario(&quot;Check Flight One Way trip can be booked successfully&quot;, &quot;Optional[SpiceJet Flight Booking]&quot;)">runScenario("Check Flight One Way trip can be booked successfully", "Optional[SpiceJet Flight Booking]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -124,6 +133,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Happy_Path_Patient_Web_and_MR.cukes.DemoWebSpiceJet</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check Flight One Way trip can be booked successfully&quot;, &quot;Optional[SpiceJet Flight Booking]&quot;)">
+                  </a> <!-- runScenario("Check Flight One Way trip can be booked successfully", "Optional[SpiceJet Flight Booking]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check Flight One Way trip can be booked successfully", "Optional[SpiceJet Flight Booking]")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at Happy_Path_Patient_Web_and_MR.stepDefinitions.SpiceJetSteps.iShouldEnterCardDetailsInThePageAndClickProceedToPay(SpiceJetSteps.java:146)
+	at ✽.I should enter card details &quot;&amp;CARDDETAILS&amp;&quot; in the page and Click Proceed to Pay(file:///E:/ShareWebCopy_Guvi_SpiceJet/src/test/resources/features/SpiceJetBooking/1_GUVI_SpiceJetBooking.feature:56)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -136,16 +168,6 @@
                   </a> <!-- runScenario("Launch SpiceJet Website and Validate URL is valid", "Optional[SpiceJet Flight Booking]") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Launch SpiceJet Website and Validate URL is valid", "Optional[SpiceJet Flight Booking]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Check Flight One Way trip can be booked successfully&quot;, &quot;Optional[SpiceJet Flight Booking]&quot;)">
-                  </a> <!-- runScenario("Check Flight One Way trip can be booked successfully", "Optional[SpiceJet Flight Booking]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check Flight One Way trip can be booked successfully", "Optional[SpiceJet Flight Booking]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -215,16 +237,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Happy_Path_Patient_Web_and_MR.cukes.DemoWebSpiceJet')
-data.setCell(0, 3, 220267);
+data.setCell(0, 3, 102818);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'Happy_Path_Patient_Web_and_MR.cukes.DemoWebSpiceJet')
-data.setCell(1, 3, 14392);
+data.setCell(1, 3, 10592);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -257,19 +279,21 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Launch SpiceJet Website and Validate URL is valid", "Optional[SpiceJet Flight Booking]")</span>
-                <span class="method-start">665 ms</span>
+                <span class="method-start">498 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Check Flight One Way trip can be booked successfully", "Optional[SpiceJet Flight Booking]")</span>
-                <span class="method-start">15060 ms</span>
+                <span class="method-start">11091 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">235328 ms</span>
+                <span class="method-start">113917 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">235328 ms</span>
+                <span class="method-start">113918 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

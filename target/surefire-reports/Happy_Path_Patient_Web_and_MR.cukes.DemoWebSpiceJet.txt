@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: Happy_Path_Patient_Web_and_MR.cukes.DemoWebSpiceJet
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 236.24 sec - in Happy_Path_Patient_Web_and_MR.cukes.DemoWebSpiceJet
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 114.861 sec <<< FAILURE! - in Happy_Path_Patient_Web_and_MR.cukes.DemoWebSpiceJet
+runScenario(Happy_Path_Patient_Web_and_MR.cukes.DemoWebSpiceJet)  Time elapsed: 102.881 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+
