@@ -19,20 +19,20 @@ Total commands to push a new project to Git and from Git to Github with "main" b
 
 13) Create New Branch, Write Script and move to GitHub
 
-git checkout -b SpicejetChromeBrowser
+git checkout -b ChromeBrowser
 git status
 
 Write Script in Intellij IDE
 
 git add "filename"
 git commit -a -m "add comments"
-git push -u origin SpicejetChromeBrowser
+git push -u origin ChromeBrowser
 
 //Go to master branch,pull all code from master branch, merge new branch code with master branch and push code to master branch
 
 git checkout master
 git pull origin master
-git merge SpicejetChromeBrowser
+git merge ChromeBrowser
 git push origin master
 
 git pull origin master
